@@ -1,0 +1,27 @@
+/*
+Arquivo que contem as regras de GRID.
+Utilizado para definir colunas que ocuparão parte da tela
+O objetivo do GRID LAYOUT é facilitar o desenvolvimento sem que 
+    seja necessário reescrever todas as regras de tamanho.
+*/
+
+.coluna{
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    /* Uma borda para facilitar o alinhamento */
+    border: red 1px solid;
+    padding: 5px;
+}
+/* Largura: 100% */
+.l-100{ width: 100%; background-color: #c4e0ff}
+
+/* Largura: 50% */
+.l-50{ width: 50%; background-color: #fdd0d0}
+
+/* Largura: 33% */
+.l-33{ width: 33.333%;}
+
+/* Largura: 25% */
+.l-25{ width: 25%; background-color: #d2fdd0}
+
