@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="favicon.PNG"/>
+        <link rel="stylesheet" href="css/base.css">
+        <style>
+            code {
+                background-color: #efefef;
+                font-family: "Courier";
+                font-size: 10pt;
+                padding: 3px;
+                color: #333333;
+            }
+            h3{
+                border-bottom: #eee solid 1px ;
+                margin-bottom: 15px;
+            }
+            .quadro{
+                display: inline-block;
+                border: blue solid 1px;
+                margin: 5px;
+                padding: 5px 10px;
+                font-family: "Courier";
+            }
+            .linha {
+                padding:30px;   
+                margin: 15px 0;
+                box-shadow: #AAAAAA 0 2px 3px 2px;
+                background-color: #fffad3;
+            }
+            ol li {
+                margin-top: 10px
+            }
+            ol {
+                list-style: lower-roman;
+                margin-left: 20px;
+            }
+            ul {
+                list-style: circle;
+                margin-left: 20px;
+            }
+            button:hover{
+                cursor: pointer;
+                color: #536b98;
+            }
+            button{
+                padding: 5px 10px;
+            }
+            input[type='number']{
+                padding: 5px 10px;
+            }
+            table th{
+                font-weight: 700;
+            }
+            table td, table th{
+                padding: 5px;
+                background-color: #fafaed;
+            }
+
+            .instrucoes a{
+                color: #ccccff;
+            }
+            .instrucoes *{
+                font-family: "Courier" !important;
+            }
+            .instrucoes li{
+                margin-bottom: 15px;
+            }
+            .instrucoes{
+                background-color: #006699; 
+                color: white
+            }
+            .red-alert{
+                font-size: 14pt; background-color: #cc0000; padding: 10px; text-align: center;
+                box-shadow: #033669 1px 2px 4px 2px;
+
+            }
+        </style>
+        <script src="lista_repeticoes.js"></script>
+
+    </head>
+    <body>
+
+
+        <div class="container">
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+
+                    <ol>
+                        <li>Crie um campo em que o usuário possa informar um número;</li>
+                        <li>Adicione um evento em que após pressionar uma tecla (<code>onkeyup</code>) 
+                            chama uma função que calcula o fatorial do <b>número informado</b>;</li>
+                        <li>O programa deve exibir o processo de calculo em uma tag de tabela (<code> < table > </code>) 
+                            como a tabela abaixo demonstra:
+                            <br>
+                            <i>Exemplo de resultado se o número 5 for informado pelo usuário: </i>
+
+                            <table border="1" width="100%" >
+                                <tr><th>Indice</th><th>Multiplicador</th><th>Resultado</th></tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>1*2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>1*2*3</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>1*2*3*4</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1*2*3*4*5</td>
+                                    <td>120</td>
+                                </tr>
+                            </table>
+
+                        </li>
+
+                        <li> Se o usuário informar um <b>número negativo</b>, converte-lo para <b>positivo</b> antes de realizar o calculo</li>
+                        <li> Crie o campo para informar o número e a tabela que deverá ser preenchida dentro do quadro amarelo do exercício.</li>
+                    </ol>
+
+                </div>
+            </div> <!-- FECHAMENTO DA TAG DE EXERCICIO -->
+
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+
+                    <p>O botão <b>"Verificar estoque"</b> dispara uma função javascript <code>verifica_estoque()</code> 
+                        que <b>obtem um array</b> de tags com o valor de estoque de cada produto em uma almoxarifado.</p>
+
+                    <ol>
+                        <li>Modifique a função para apresentar a quantidade em estoque em 
+                            <b style="color: red">vermelho</b> se estiver abaixo de <code>0</code>, 
+                            mostrar em <b style="color: grey">cinza</b> se estiver igual a <code>0</code> e  
+                            <b style="color: green">verde</b> se estiver com valor acima de <code>0</code>;</li>
+
+                        <li>Adicione <b>mais uma coluna</b> à tabela com um botão "Adicionar ao estoque" em cada linha de produto;</li>
+                        <li>O botão "Adicionar ao estoque" deve <b>adicionar à quantidade</b> em estoque da linha em questão o valor de <code>10</code> unidades.
+                            <br> Para faze-lo, a função que o evento de <code>onclick</code> chama deve enviar como parametro 
+                            a posição do item na tabela (<i>exemplo: <code>adicionar_ao_estoque(3)</code> se o botão estiver na quarta linha da tabela)</i>;</li>
+
+                    </ol>
+                    <br>
+                    <button onclick="verifica_estoque()">Verificar Estoque </button>
+                    <br>
+
+                    <table border="1" width="100%" >
+                        <tr><th>Identificador</th><th>Descrição</th><th>Quantidade em estoque</th></tr>
+                        <tr class="produto">
+                            <td>12205</td>
+                            <td>Teclado multimídia seminovo USB</td>
+                            <td class="quantidade">8</td>
+                        </tr>
+                        <tr class="produto">
+                            <td>12206</td>
+                            <td>Teclado Sem fio USB (novo)</td>
+                            <td class="quantidade">0</td>
+                        </tr>
+                        <tr class="produto">
+                            <td>12207</td>
+                            <td>Mouse optico USB sem fio</td>
+                            <td class="quantidade">-3</td>
+                        </tr>
+                        <tr class="produto">
+                            <td>12208</td>
+                            <td>Pendrive de 16 GB</td>
+                            <td class="quantidade">3</td>
+                        </tr>
+                        <tr class="produto">
+                            <td>12209</td>
+                            <td>Placa mãe para processador AMD</td>
+                            <td class="quantidade">5</td>
+                        </tr>
+                        <tr class="produto">
+                            <td>12210</td>
+                            <td>Placa mãe para processador INTEL</td>
+                            <td class="quantidade">-12</td>
+                        </tr>
+                    </table>
+                    <p>
+                        <br>
+                        <i>Obs: é possível adicionar uma <b> classe à uma tag </b> pelo javascript 
+                            utilizando a função do elemento <code>.classList.add("classe_desejada")</code>, 
+                            remove-la usando <code>.classList.remove("classe_indesejada")</code>
+
+                            Se utilizar o método <code>.classList.toggle('classe_como_interruptor')</code>, o 
+                            javascript remove a classe se houver, caso contrário, a adicionará ao elemento (tag)
+                        </i>
+                        <br>
+                        <br>
+                        Mais detalhes neste link: <a  href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList">
+                            documentação sobre o método classList do javascript</a>
+                    </p>
+                </div>
+            </div> <!-- FECHAMENTO DA TAG DE EXERCICIO -->
+
+
+            <div class="coluna l-100 linha instrucoes">
+                <div class="coluna l-100">
+                    <h3> Instruções para entrega da atividade.</h3>
+                    <ul>
+                        <li> A  tag <code>< title ></code> da página deve conter o nome do aluno; </li>
+                        <li> No arquivo javascript deve conter um comentário com o nome do aluno 
+                            (utilizar comentário de uma linha: <code>// Nome do Aluno </code>);</li>
+                        <li>Realizar o upload do arquivo no google drive. Utilize a conta do curso 
+                            se não deseja ou não possua uma pessoal no google: <br>
+                            <a href="https://drive.google.com">Link para Google drive</a>
+                            <br>
+                            <br>
+                            <code>webdesign.senai.pb@gmail.com</code><br>
+                            <code>pato_branco</code><br>
+                        </li>
+                        <li>Após realizar o upload  do arquivo para o  GDRIVE, compartilhe com o e-mail: <br>
+                            <code>maicodalponte@gmail.com</code>
+                            <br> Assim eu receberei um e-mail informando sobre a entrega da atividade, da mesma forma 
+                            que terei acesso aos arquivos mesmo se o aluno desejar modifica-los em casa.
+                        </li>
+                        <li>
+                            Para entrega em pendrive, os arquivos devem estar dentro de uma pasta com o nome do aluno no seguinte formato:
+                            <br>
+                            <code>[nome do aluno]_javascript_repeticoes</code>
+                            <br> O pendrive deve ser entregue a mim durante a aula para tira-los do pendrive até o final da aula. 
+                            Os arquivos serão colocados no GDRIVE do professor durante a aula.
+                        </li>
+                    </ul>
+                    <div class="red-alert">
+                        NÃO ESQUEÇA DE, AO FINAL DA AULA, CONFIRMAR COM O PROFESSOR SE A PASTA DO GDRIVE QUE 
+                        CONTÉM OS ARQUIVOS FOI EFETIVAMENTE COMPARTILHADA.<br>
+                        <b>TRABALHOS QUE NÃO FOREM ENVIADOS DESTA FORMA, NÃO MAIS SERÃO AVALIADOS!</b>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fim da tag Container que centraliza toda a página -->
+
+    </body>
+</html>

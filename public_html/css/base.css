@@ -1,28 +1,31 @@
 @import 'reset.css';
 @import 'grid.css';
-@import 'tabela.css';
 
 *{
-    font-family: 'Calibri';
+    font-family: 'Play', sans-serif;
 }
 footer{
-    position: fixed;    
+    position: fixed;
     bottom: 0;
 }
 .setor{
     width: 100%;
-    float: left;
-    background-color: #f9ffc4;
+    float: right;
 }
 .container{
-    width: 1000px;
+    width: 800px;
     margin:  0 auto;
     /* para facilitar o ajuste */
-    border-left: yellow 1px dashed;
-    background-color: #ffe6c4;
+    /*border-left: yellow 1px dashed;*/
+    /*background-color: #ffe6c4;*/
 }
 #menu {
+    width: 400px;
     height: 40px;
+    margin: 10px;
+
+    /* float Funciona porque está ao lado da logomarca*/
+    float: right; 
 }
 #menu li{
     float: left;    
@@ -94,4 +97,12 @@ footer{
     font-weight: 700;
     font-size: 14pt;
     text-transform: uppercase;
+}
+
+.botao{
+    background-color: #5b247a;
+    padding: 20px;
+    color: white;
+    border-radius: 7px;
+    display: inline-block;
 }

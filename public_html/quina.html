@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="favicon.PNG"/>
+        <script src="quina.js"></script>
+    </head>
+    <body>
+        <h1>Jogar na quina</h1>
+        <input type="number" class="numero" id="num-1" value="5">
+        <input type="number" class="numero" id="num-2" value="3">
+        <input type="number" class="numero" id="num-3" value="4">
+        <input type="number" class="numero" id="num-4" value="8">
+        <input type="number" class="numero" id="num-5" value="1">
+        <hr>
+        <button onclick="jogar()" style="padding: 20px 50px;"> Jogar </button>
+        <h5> Resultado </h5>
+        <!-- Campo de "apenas leitura", não pode 
+        ser modificado pelo usuário-->
+        <input type="text" id="resultado" readonly="readonly">
+    </body>
+</html>

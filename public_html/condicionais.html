@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            // Tipo booleano para 
+            // Estruturas condicinais
+            acesso_permitido = 'administrador';
+            usuario = 'administrador';
+            if ('senha do cadastro' == 'senha do cadastro') {
+//                console.log('A condição é verdadeira');
+                if (usuario == acesso_permitido) {
+//                    console.log('Acesso liberado')
+                } else {
+//                    console.log('Acesso negado')
+                }
+            } else {
+//                console.log('Condição é falsa');
+            }
+
+            // Estoque da loja de calçados
+            estoque = 2;
+            quantidade_na_compra = 3;
+
+            if (estoque < quantidade_na_compra) {
+                document.write('Compra não permitida');
+            }
+
+            // Criada uma função que recebe dois parametros
+            function loteria(numero, numero2) {
+                // Resultados do sorteio
+                sorteio1 = 12;
+                sorteio2 = 42;
+
+                // caractere | (pipe)
+                if (
+                        (sorteio1 == numero || sorteio2 == numero)
+                        &&
+                        (sorteio1 == numero2 || sorteio2 == numero2)
+                        ) {
+                    console.log('Acertou a loteria');
+                } else {
+                    console.log('Você não acertou os dois números');
+                } // Finaliza bloco do "se não
+
+            } // Finaliza bloco da função
+
+            loteria('42', '12');
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+    </body>
+</html>

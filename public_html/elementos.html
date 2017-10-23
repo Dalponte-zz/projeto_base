@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/base.css" rel="stylesheet">
+        <script src="js/eventos.js"></script>
+    </head>
+    <body>
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+                <input type="text" id="nome" 
+                       value="">
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> input </b>
+                <br> Utilizado para textos
+            </div>
+        </div>
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+                <textarea id="descricao"
+                          >texto de multiplas 
+                    linhas.
+                    Começando novo paragrafo</textarea>
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> textarea </b>
+                <br> Utilizado para textos em 
+                mais de uma linha;
+            </div>
+        </div>
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+                <select id="escolaridade">
+                    <option value="1">
+                        Fundamental incompleto
+                    </option>
+                    <option value="2">
+                        Fundamental completo
+                    </option>
+                    <option selected="selected">
+                        Médio incompleto
+                    </option>
+                    <option value="3">
+                        Médio completo
+                    </option>
+                </select>
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> select </b>
+                <br> Utilizado para fornecer
+                opções ao usuário;
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+
+                <input type="file" id="foto">
+
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> file </b>
+                <br> Utilizado para uploads
+                de arquivos;
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+                <input type="radio" id="genero-m"
+                       name="genero">Masculino
+                <input type="radio" id="genero-f"
+                       name="genero">Feminino
+                <input type="radio" id="genero-o"
+                       name="genero">Outro
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> genero </b>
+                <br> Utilizado para fornecer
+                opções mas exindo-as com 
+                descrição;
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+
+                <input type="date" id="nascimento">
+
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> date (data) </b>
+                <br> Utilizado para fornecer
+                uma data para seleção 
+                pelo usuário;
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <div class="coluna l-50">
+                <input type="checkbox" id="senai"
+                       onchange="alert('mensagem')"
+                       >
+                Matriculado em algum curso do senai
+                <input type="checkbox" id="ingles">
+                Matriculado em algum curso de inglês
+
+            </div>
+            <div class="coluna l-50">
+                Elemento: <b> Checkbox </b>
+                <br> Utilizado para o usuário
+                informar se uma situação se aplica
+                ou não;
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <button class="botao"
+                    onclick="enviar()">
+                Enviar formulário
+            </button>
+        </div>
+
+    </body>
+</html>

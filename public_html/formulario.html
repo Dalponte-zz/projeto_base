@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.css" rel="stylesheet">    
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+        <div class="coluna l-100">
+            <div class="container">
+
+                <h1 id="campo">Javascript</h1>
+
+                <input id="texto" type="text">
+
+                <button onclick="
+                        // document refere-se à página HTML
+                        // campo é uma variavel que tem o H1
+                        campo = document.getElementById('campo');
+                        // texto é uma variavel que tem o texto a ser mudado
+                        texto = document.getElementById('texto');
+                        // Obter o contúdo da variavel que possui texto 
+                        novo_texto = texto.value;
+                        // Colocar o novo texto como conteúdo da variavel campo
+                        campo.innerHTML = 'texto mudado para ' + novo_texto ;
+                        ">
+                    Mudar texto do H1
+                </button>
+            </div>
+        </div>
+
+        <div class="coluna l-100">
+            <input type="text" id="nome"
+                   placeholder="nome">
+            <input type="text" id="sobrenome" 
+                   placeholder="sobrenome">
+            <button onclick="//digitar o código aqui">
+                Fazer nome completo
+            </button>
+            <h2 id="nome_completo">
+                <small>
+                    Informe o nome e clique no botão
+                </small>
+            </h2>
+        </div>
+
+        <script>
+            // Introdução ao Javascript ao JS
+            /*
+             alert('você é o visitante 1000, \n\
+             clique em OK e receba seu premio');
+             */
+
+
+        </script>
+
+    </body>
+</html>

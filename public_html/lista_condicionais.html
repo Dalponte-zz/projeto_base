@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="favicon.PNG"/>
+        <link rel="stylesheet" href="css/base.css">
+        <style>
+            code {
+                background-color: #efefef;
+                font-family: "Courier";
+                font-size: 10pt;
+                padding: 3px;
+            }
+            h3{
+                border-bottom: #eee solid 1px ;
+                margin-bottom: 15px;
+            }
+            .quadro{
+                display: inline-block;
+                border: blue solid 1px;
+                margin: 5px;
+                padding: 5px 10px;
+                font-family: "Courier";
+            }
+            .linha {
+                padding:30px;   
+                margin: 15px 0;
+                box-shadow: #AAAAAA 0 2px 3px 2px;
+                background-color: #fffad3;
+            }
+            ol li {
+                margin-top: 10px
+            }
+            ol {
+                list-style: lower-roman;
+                margin-left: 20px;
+            }
+            ul {
+                list-style: circle;
+                margin-left: 20px;
+            }
+            button:hover{
+                cursor: pointer;
+                color: #536b98;
+            }
+            button{
+                padding: 5px 10px;
+            }
+            input[type='number']{
+                padding: 5px 10px;
+            }
+        </style>
+        <script src="lista_condicionais.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="coluna l-100 linha" style="background-color: #e9e9e9">
+                <div class="coluna l-100">
+
+                    <h3> Exemplo 1 </h3>
+                    <p>
+                        Obtenha os valores informados nos campos 
+                        <code>#ex1-dia</code>, 
+                        <code>#ex1-mes</code>, 
+                        <code>#ex1-ano</code>, 
+                        descubra a idade do usuário e apresente no <code>.quadro</code>
+                        azul a faixa etaria do usuário:
+                    </p>
+                    <ul>
+                        <li>Menor do que 13 anos: <b>Criança</b></li>
+                        <li>De 13 a 18 anos: <b>Adolecente</b></li>
+                        <li>de 19 a 25 anos: <b>Jovem</b></li>
+                        <li>de 26 a 59 anos: <b>Adulto</b></li>
+                        <li>Maior do que 60 anos: <b>Idoso</b></li>
+                    </ul>
+
+                </div><!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+                    <div class="coluna l-33">
+                        <label>Dia: </label> <br>
+                        <input type="number" id="ex1-dia" class="numero"> 
+                    </div>
+                    <div class="coluna l-33">
+                        <label>Mês: </label> <br>
+                        <input type="number" id="ex1-mes" class="numero"> 
+                    </div>
+                    <div class="coluna l-33">
+                        <label>Ano: </label> <br>
+                        <input type="number" id="ex1-ano" class="numero"> 
+                    </div>
+                    <br>
+                    <div class="coluna l-100">
+                        <button onclick="verificar_faixa_etaria()"> Verificar faixa etaria </button>
+                        <div class="quadro" id="ex1-resultado">-</div>
+                    </div>
+                </div><!-- l-100 Enunciado -->
+            </div> <!-- Linha l-100 exemplo 1 -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+                    <p>
+                        Escrever um algoritmo que leia três notas obtidas por um aluno durante o curso. Calcular a sua
+                        média (aritmética). Apresentar no <code>.quadro</code> sua situação dentre as possíveis:
+                    </p>
+                    <ul>
+                        <li>Maior ou igual a 7: <b>Aprovado</b></li>
+                        <li>De 5 até 7: <b>De recuperação</b></li>
+                        <li>Menor do que 5: <b>Reprovado</b></li>
+                    </ul>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+
+                    <label>Exemplo de campo: </label>
+                    <input type="number" id="id_do_campo" placeholder="indicativo sobre o campo" value=""> 
+                    <br>
+                    <button> Descrever ação no botão </button>
+                    <div class="quadro" id="e1-resultado"><i style="color: #AAAAAA;">Aqui será apresentado o resultado</i></div>
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+                    <p>Escrever um algoritmo para verificar se o aluno será reprovado por falta levando em consideração os seguintes pontos:</p>
+                    <ol>
+                        <li>Criar um campo em que o usuário informa a <q>quantidades de aulas</q> (horas) que todo o curso é composto. 
+                            <i>(obs: adicionar um valor definido por padrão, ou seja, preenchido previamente)</i></li>
+                        <li>Criar um campo em que o usuário informa a <b>quantidade de faltas</b> que possuí (aulas, não dias)</li>
+                        <li>Criar um botão que deve realizar as seguintes operações: 
+                            <ul>
+                                <li>Sabendo que a cada dia de curso, são registradas <b>4 presenças</b> (aulas), 
+                                    calcular a quantidade de dias que o aluno faltou;</li>
+                                <li>Para que o aluno seja aprovado é necessário que esteja presente em <b>75%</b> das aulas.
+                                    Portanto, deve ser calculado qual é a porcentagem de presença do aluno;</li>
+                            </ul>
+                        </li>
+                        <li>Apresentar o resultado dos calculos do item anterior na página dentro do elemento (tag) 
+                            <code> #resultados </code>. Levando em consideração os seguintes requisitos
+                            <ul>
+                                <li>Criar um quadro para apresentar a <b>quantidade de dias</b> em que o aluno faltou;</li>
+                                <li>Criar um quadro para apresentar a <b>percentagem de presença</b>;</li>
+                                <li>Se o aluno estiver <b>reprovado</b> por falta, apresentar na página o seguinte: 
+                                    <code>"O aluno está reprovado por falta"</code>. Se estiver <b>aprovado</b>, não apresentar mensagem alguma;</li>
+                                <li>Se o aluno estiver reprovado, a porcentagem de falta deve estar em cor <b style="color: red">vermelha</b>;</li>
+                                <li>Se o aluno estiver aprovado, a porcentagem de falta deve estar em cor <b style="color: green">verde</b>;</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100 resultados">
+
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 -->
+
+        </div> <!-- Finalizado o container que alinha tudo no centro -->
+
+    </body>
+</html>

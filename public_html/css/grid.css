@@ -10,18 +10,18 @@ O objetivo do GRID LAYOUT é facilitar o desenvolvimento sem que
     float: left;
     box-sizing: border-box;
     /* Uma borda para facilitar o alinhamento */
-    border: red 1px solid;
-    padding: 5px;
+    border: transparent 1px solid;
+    padding: 7px;
 }
 /* Largura: 100% */
-.l-100{ width: 100%; background-color: #c4e0ff}
+.l-100{ width: 100%;}
 
 /* Largura: 50% */
-.l-50{ width: 50%; background-color: #fdd0d0}
+.l-50{ width: 50%; }
 
 /* Largura: 33% */
 .l-33{ width: 33.333%;}
 
 /* Largura: 25% */
-.l-25{ width: 25%; background-color: #d2fdd0}
+.l-25{ width: 25%;}
 
