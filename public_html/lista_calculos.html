@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Isabela</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/png" href="favicon.PNG"/>
@@ -36,13 +36,13 @@
 
             <div class="coluna l-100 linha">
                 <div class="coluna l-100">
-                    
+
                     <h3> Exemplo 1 </h3>
                     <p>
                         Obtenha o valor informado no campo <code>#ex1-numero</code> e 
                         coloque-o no elemento <code>.quadro</code>
                     </p>
-                    
+
                 </div><!-- l-100 Enunciado -->
                 <div class="coluna l-100">
 
@@ -56,14 +56,14 @@
 
             <div class="coluna l-100 linha">
                 <div class="coluna l-100">
-                    
+
                     <h3> Exemplo 2 </h3>
                     <p>
                         Obtenha o valor informado no campo <code>#ex2-numero1</code>,  
                         multiplique pelo valor do campo <code>#ex2-numero2</code> e
                         coloque-o no elemento <code>.quadro</code>
                     </p>
-                    
+
                 </div> <!-- l-100 Enunciado -->
                 <div class="coluna l-100">
 
@@ -79,49 +79,140 @@
                 </div> <!-- l-100 Campos -->
             </div> <!-- Linha l-100 exemplo 2 -->
 
-            
+
             <div class="coluna l-100 linha">
                 <div class="coluna l-100">
-                    
+
                     <h3> Exercicio 1 </h3>
                     <p>
                         Multiplique o valor informado no campo <code>#e1-numero</code> 
                         por <b>256</b> e apresente o resultado no elemento <code>.quadro</code>
                     </p>
-                    
+
                 </div> <!-- l-100 Enunciado -->
                 <div class="coluna l-100">
 
                     <label>Número 1: </label>
                     <input type="number" id="e1-numero"> 
                     <br>
-                    <button> Multiplicar </button>
+                    <button onclick="exercicio_1()"> Multiplicar </button>
                     <div class="quadro" id="e1-resultado">-</div>
 
                 </div> <!-- l-100 Campos -->
             </div> <!-- Linha l-100 exemplo 2 -->
-            
+
             <div class="coluna l-100 linha">
                 <div class="coluna l-100">
-                    
+
                     <h3> Exercicio 2 </h3>
                     <p>
-                        Multiplique o valor informado no campo <code>#e2-numero</code> 
-                        por <b>256</b> e apresente o resultado no elemento <code>.quadro</code>
+                        Obtenha o valor informado no campo <code>#e2-numero</code> 
+                        e apresente o cubo deste valor e apresente no elemento <code>.quadro</code>
                     </p>
-                    
+
                 </div> <!-- l-100 Enunciado -->
                 <div class="coluna l-100">
 
                     <label>Número 1: </label>
                     <input type="number" id="e2-numero"> 
                     <br>
-                    <button> Multiplicar </button>
+                    <button onclick="exercicio_2()"> Multiplicar </button>
                     <div class="quadro" id="e2-resultado">-</div>
 
                 </div> <!-- l-100 Campos -->
             </div> <!-- Linha l-100 exemplo 2 -->
-            
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio 3 </h3>
+                    <p>
+                        Obtenha o valor informado no campo <code>#e3-reais</code> 
+                        calcule o equivalente na moeda cujo botão descreve e  
+                        e apresente no elemento <code>.quadro</code>
+                    </p>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+
+                    <label>Valor em REAIS: </label>
+                    <input type="number" id="e3-reais"> 
+                    <br>
+                    <button onclick="exercicio_3_dolar()"> Equivalente em DOLAR </button>
+                    <button onclick="exercicio_3_euro()"> Equivalente em EURO </button>
+                    <div class="quadro" id="e3-resultado">-</div>
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 exemplo 2 -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio 4 </h3>
+                    <p>
+                        Obtenha o valor informado no campo <code>#e4-temperatura</code> 
+                        calcule o equivalente na moeda cujo botão descreve e  
+                        e apresente no elemento <code>.quadro</code>
+                    </p>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+
+                    <label>Temperatura em ºC: </label>
+                    <input type="number" id="e4-temperatura"> 
+                    <br>
+                    <button onclick="exercicio_4_fahr()"> Equivalente em Fahrenheit </button>
+                    <button onclick="exercicio_4_kelvin()"> Equivalente em Kelvin </button>
+                    <div class="quadro" id="e4-resultado">-</div>
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 exemplo 2 -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio 5 </h3>
+                    <p>
+                        Obtenha o valor informado no campo <code>#e5-ano</code>, 
+                        calcule a idade atual de alguém nascido naquele ano
+                        e apresente no elemento <code>.quadro</code>
+                    </p>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+
+                    <label>Ano de nascimento: </label>
+                    <input type="number" id="e5-ano"> 
+                    <br>
+                    <button onclick="exercicio_5()"> Calcular </button>
+                    <div class="quadro" id="e5-resultado">-</div>
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 exemplo 2 -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio 6 </h3>
+                    <p>
+                        Uma linha de crédito do banco SENAI oferece planos com
+                        taxa de juros de 5% ao ano. Obtenha o valor informado
+                        no campo <code>#e6-valor</code>, calcule o valor mensal a ser
+                        pago e apresente no elemento <code>.quadro</code>
+                    </p>
+
+                </div> <!-- l-100 Enunciado -->
+                <div class="coluna l-100">
+
+                    <label>Valor emprestado: </label>
+                    <input type="number" id="e6-valor"> 
+                    <br>
+                    <button onclick="exercicio_6()"> Calcular juros mensais </button>
+                    <div class="quadro" id="e6-resultado">-</div>
+
+                </div> <!-- l-100 Campos -->
+            </div> <!-- Linha l-100 exemplo 2 -->
+
         </div> <!-- Finalizado o container que alinha tudo no centro -->
 
     </body>
