@@ -1,7 +1,14 @@
 #Projeto base para utilizar no desenvolvimento básico em HTML e CSS
 
 - download dos arquivos
-- Copiar conteúdo da pasta `public_html` para o projeto
-- Importar no `head` da página o arquivo `base.css` 
-- Não esquecer de sempre criar um `div` com classe `.setor` para qualquer coisa no projeto
-- Utilizar `.container` para delimitar a largura do site
+- Extrair arquivos usando winrar ou winzip
+- "Abrir projeto" utilizando o netbeans
+
+#Páginas 
+
+- Lista de exercicios sobre operadores de calculo: [lista_calculo](https://dalponte.github.io/projeto_base/public_html/lista_calculos.html)
+
+- Lista de exercicios sobre estruturas de condições: [lista_condicionais](https://dalponte.github.io/projeto_base/public_html/lista_condicionais.html)
+
+- Lista de exercicios sobre estruturas de condições: [lista_repeticoes](https://dalponte.github.io/projeto_base/public_html/lista_repeticoes.html)
+
