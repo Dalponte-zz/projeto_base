@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Revisão de estruturas de repetição</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .reprovado{
+                background-color:  yellow;
+            }
+            .normal {
+                background-color: green;
+            }
+            </style>
+    </head>
+    <body>
+        <table border="1" style="width: 100%; text-align: center" >
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nome</th>
+                    <th>Faltas</th>
+                </tr>
+            </thead>
+            <tbody id="tabela_alunos" >
+                <tr>
+                    <td>10</td>
+                    <td>Jackson</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            // array de alunos, ou Conjunto de alunos
+            alunos = [
+                [10, 'Jackson', 5],
+                [4, 'Isabela', 6],
+                [7, 'Vinicius', 0],
+                [9, 'Arthur', 6],
+                [8, 'Herik', 14],
+                [15, 'Carlos', 13],
+                [12, 'Jorge', 8],
+                [3, 'Rita', 9],
+                [11, 'Tiago', 12],
+                [18, 'Renan', 5],
+                [5, 'Marco', 10],
+                [1, 'Kerlon', 3]
+            ];
+
+            tbody = document.getElementById('tabela_alunos');
+
+            tbody.innerHTML = '';
+
+            for (indice = 0; indice < 12; indice += 1) {
+                if (alunos[indice][2] > 10) {
+                    status = 'reprovado';
+                } else {
+                    status = 'normal';
+                }
+
+                coluna_numero = '<td>' + alunos[indice][0] + '</td>';
+                coluna_nome = '<td>' + alunos[indice][1] + '</td>';
+                coluna_faltas = '<td class="  ' + status + '  ">' + alunos[indice][2] + '</td>';
+
+                tbody.innerHTML += "<tr>"
+                        + coluna_numero
+                        + coluna_nome
+                        + coluna_faltas
+                        + "</tr>";
+            } // Fechamento do bloco do for
+
+
+
+        </script>
+
+    </body>
+</html>

@@ -93,49 +93,56 @@
                     <h3> Exercicio <span class="num"></span>  </h3>
 
                     <ol>
-                        <li>Crie um campo em que o usuário possa informar um número;</li>
-                        <li>Adicione um evento em que após pressionar uma tecla (<code>onkeyup</code>) 
-                            chama uma função que calcula o fatorial do <b>número informado</b>;</li>
-                        <li>O programa deve exibir o processo de calculo em uma tag de tabela (<code> < table > </code>) 
-                            como a tabela abaixo demonstra:
-                            <br>
-                            <i>Exemplo de resultado se o número 5 for informado pelo usuário: </i>
+                        <li><s>Crie um campo em que o usuário possa informar um número;</s></li>
+                        <li><s>Adicione um evento em que após pressionar uma tecla (<code>onkeyup</code>) 
+                                chama uma função que calcula o fatorial do <b>número informado</b>;</s></li>
 
-                            <table border="1" width="100%" >
-                                <tr><th>Indice</th><th>Multiplicador</th><th>Resultado</th></tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>1*2</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>1*2*3</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>1*2*3*4</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>1*2*3*4*5</td>
-                                    <td>120</td>
-                                </tr>
-                            </table>
 
-                        </li>
-
-                        <li> Se o usuário informar um <b>número negativo</b>, converte-lo para <b>positivo</b> antes de realizar o calculo</li>
-                        <li> Crie o campo para informar o número e a tabela que deverá ser preenchida dentro do quadro amarelo do exercício.</li>
+                        <li> <s>Se o usuário informar um <b>número negativo</b>, converte-lo para <b>positivo</b> antes de realizar o calculo</s></li>
+                        <li> Calcular o fatorial do numero informado e apresentar em um quadro.</li>
                     </ol>
 
+                    <hr>
+                    <input id="numero" type="number" onkeyup="fatorial()">
+
+                </div>
+            </div> <!-- FECHAMENTO DA TAG DE EXERCICIO -->
+
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+
+                    <ol>
+                        <li>Criar um botão dentro do painel deste exercicio que chama uma função que vai preencher a tabela abaixo;</li>
+                        <li>Na função criada, criar uma variável que conterá um array (conjunto) com os nomes de cada aluno do curso de Web Design do SENAI;</li>
+                        <li>Em seguida, criar uma estrutura de repetição que vai percorrer cada posição do array definido acima, colocando o nome na tabela abaixo;</li>
+                        <li>Modificar o bloco da repetição criada acima para adicionar uma classe <code>aluno</code> à cada tag <code>< td ></code> que contem o nome do aluno;</li>
+                        <li>Definir uma regra para a classe mencionada acima no CSS da página que faz com que os nomes tenham cor azul.</li>
+                    </ol>
+                    <i>Obs: Lembrem-se de que para trabalhar com elementos HTML dentro do javascript, é necessário que estes elementos possam ser identificados por um id ou classe.</i>
+
+                    <table border="1" width="100%" >
+
+                    </table>
+
+                </div>
+            </div> <!-- FECHAMENTO DA TAG DE EXERCICIO -->
+
+            <div class="coluna l-100 linha">
+                <div class="coluna l-100">
+
+                    <h3> Exercicio <span class="num"></span>  </h3>
+
+                    <ol>
+                        <li>Criar um campo neste exercicio onde será possível digitar o nome de um aluno;</li>
+                        <li>Adicionar um <b>evento</b> no campo acima que chamará uma função no javascript que procurará pelo nome do aluno na página;</li>
+                        <li>utilizar o código a seguir para obter um array de elementos que contem nomes de alunos:<code>alunos_na_pagina = document.getElementsByClassName('alunos');</code></li>
+                        <li>Apresentar no console do navegador os dados obtidos</li>
+                        <li>Criar uma estrutura de repetição <code>for</code> que percorre o array de nomes obtidos
+                            e mudar a cor do texto para vermelho se o nome do aluno obtido for igual ao informado.</li>
+                    </ol>
                 </div>
             </div> <!-- FECHAMENTO DA TAG DE EXERCICIO -->
 

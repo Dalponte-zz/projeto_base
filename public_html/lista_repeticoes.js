@@ -20,10 +20,23 @@ function verifica_estoque() {
     for (var i = 0; i < produtos.length; i++) { // variavel "elements" é um array
         // Mudar seu conteúdo incrementalmente
         console.log(produtos[i].innerHTML);
-        
+
         // Adicionar classe se não houver. Se houver, remove-la.
         produtos[i].classList.toggle('teste');
     }
 
 }
 
+
+function  fatorial() {
+    console.log('Calculando fatorial');
+    numero = document.getElementById('numero').value;
+    if (numero < 0){
+        numero = numero * -1;
+    }
+
+    resultado = 1;
+    for (indice = 1; indice <= numero; indice += 1) {
+        resultado = resultado * indice;
+    }
+}
