@@ -12,3 +12,4 @@
 
 - Lista de exercicios sobre estruturas de condições: [lista_repeticoes](https://dalponte.github.io/projeto_base/public_html/lista_repeticoes.html)
 
+- Reuisitos para o trabalho final: [trabalho final](https://dalponte.github.io/projeto_base/public_html/trabalho_final.html)
