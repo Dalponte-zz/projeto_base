@@ -1,0 +1,27 @@
+#menu{
+    width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white; 
+    display: inline-block;
+}
+#menu .link:hover{
+    background-color: #333333;
+}
+#menu .link{
+    float: left;
+    padding: 10px;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.expancao{
+    display: none;
+    background-color: lightblue;
+}
+.expancao.visivel{
+    display: inline-block !important;
+}

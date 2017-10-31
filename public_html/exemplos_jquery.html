@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exemplos de utilização</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/exemplo.css">
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/exemplo.js"></script>
+    </head>
+    <body>
+
+        <div id="menu">
+            <div class="link">
+                <img src="favicon.PNG">
+            </div>
+
+            <div class="link" onclick="publicar()">
+                Publicar
+            </div>
+            <div class="link">
+                Login
+            </div>
+        </div><!-- FIM DA TAG #menu -->
+
+        <p>
+            <a href="#" onclick="expandir(this)">Expandir</a>
+            <span class="expancao"> 
+                Conteúdo que será exibido somente quando o 
+                link acima for clicado. Caso contrário, 
+                ficará oculto.
+            </span>
+        </p> 
+
+        <button onclick="auto_destruir()"
+                style="background-color: red"> 
+            NÃO CLIQUE AQUI 
+        </button>
+
+        <div id="conteudo">
+            Active state
+            Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. There’s no need to add a class to < button>s as they use a pseudo-class. However, you can still force the same active appearance with .active (and include the aria-pressed="true" attribute) should you need to replicate the state programmatically.
+
+            Primary link Link
+            < a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link< /a>
+            < a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link< /a>
+            Disabled state
+            Make buttons look inactive by adding the disabled boolean attribute to any  < button> element.
+
+            Primary button Button
+            < button type="button" class="btn btn-lg btn-primary" disabled>Primary button< /button>
+            < button type="button" class="btn btn-secondary btn-lg" disabled>Button< /button>
+            Disabled buttons using the < a> element behave a bit different:
+
+            s don’t support the disabled attribute, so you must add the .disabled class to make it visually appear disabled.
+            Some future-friendly styles are included to disable 
+
+
+        </div>
+
+    </body>
+</html>

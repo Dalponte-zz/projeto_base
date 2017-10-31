@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exemplo com jQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+
+        <div class="elemento" id="el">
+            conteudo
+        </div>
+        
+        <div  style="width: 120px; height: 120px;">
+            
+        </div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            div_pelo_jQuery = $('.elemento');
+
+            $('div').css('background-color','#ff0000');
+
+            // Mudar conteúdo da classe pelo jQuery
+            div_pelo_jQuery.html('Conteúdo mudado pelo jQuery');
+            // Adicionar uma classe pelo jQuery
+            div_pelo_jQuery.addClass('classe_adicionada');
+            // Remover a classe pelo jQuery
+            div_pelo_jQuery.removeClass('elemento');
+            // Mudar o id do elemento pelo jQuery
+            div_pelo_jQuery.id('novo_identificador');
+            
+        </script>
+    </body>
+</html>
